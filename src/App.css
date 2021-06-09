@@ -1,0 +1,51 @@
+body {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input {
+  padding: 5px 15px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.todoItem {
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  padding: 10px 10px;
+}
+
+.btnAdd {
+  background-color: dimgray;
+  padding: 5px 15px;
+  color: white;
+  border: 2px solid dimgray;
+  outline: none;
+  float: right;
+}
+
+.deleteItem {
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.footer {
+  padding: 10px 10px;
+  color: dimgray;
+  background-color: white;
+
+}
+
+.clear {
+  /* padding: 10px 10px; */
+  float: right;
+  border: none;
+}
