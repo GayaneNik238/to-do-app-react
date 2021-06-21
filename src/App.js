@@ -8,23 +8,24 @@ function App() {
   const [todos, setTodos] = useState([
     {
       id: Math.random(),
-      text: "Learn JS",
+      text: "Go to dentist",
       isCompleted: false
     },
     {
       id: Math.random(),
-      text: "Learn CSS",
+      text: "Finish homework",
       isCompleted: false
     },
     {
       id: Math.random(),
-      text: "Learn React",
+      text: "Clean the house",
       isCompleted: false
     }
   ]);
 
   return (
     <div className="App">
+      <h1 className="app-name">To Do App</h1>
       <TodoForm onAdd={(text) => {
         setTodos([
           ...todos,

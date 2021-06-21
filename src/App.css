@@ -10,6 +10,10 @@ body {
   padding: 5px 15px;
 }
 
+.test {
+  background-color: white;
+}
+
 .input:focus {
   outline: none;
 }
@@ -48,4 +52,9 @@ body {
   /* padding: 10px 10px; */
   float: right;
   border: none;
+}
+
+.app-name {
+  text-align: center;
+  color: teal;
 }

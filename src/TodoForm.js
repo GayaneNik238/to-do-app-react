@@ -9,6 +9,9 @@ function TodoForm({onAdd}) {
     return (
         <form className="form" onSubmit={(e) => {
             e.preventDefault();
+            if(text === "") {
+                alert("Please write something....");
+            } else 
             onAdd(text);
             setText("");
         }}>
