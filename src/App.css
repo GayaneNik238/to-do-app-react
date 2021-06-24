@@ -58,3 +58,7 @@ body {
   text-align: center;
   color: teal;
 }
+
+#warnMsg {
+  color: tomato;
+}

@@ -7,19 +7,26 @@ function TodoForm({onAdd}) {
 
 
     return (
+        <div>
+            <span id="warnMsg"></span>
         <form className="form" onSubmit={(e) => {
             e.preventDefault();
             if(text === "") {
-                alert("Please write something....");
-            } else 
-            onAdd(text);
-            setText("");
+               document.getElementById("warnMsg").innerHTML = "* Please write something";
+            } else  {
+                document.getElementById("warnMsg").innerHTML = "";
+                onAdd(text);
+                setText("");
+            }
+           
+            
         }}>
             <input className="input" type="text" value={text} onChange={(e) => {
                 setText(e.target.value);
             }} />
             <button className="btnAdd">Add</button>
         </form>
+        </div>
     )
 
 }
